@@ -12,7 +12,7 @@ class PokeList extends React.Component {
     });
     return (
       <>
-        <h1>
+        <h1 className="title">
           Mis Pokemon{' '}
           <span>
             <i class="fas fa-heart"></i>

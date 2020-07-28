@@ -1,6 +1,20 @@
 import React from 'react';
 
 class Pokemon extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      initialColor: true,
+    };
+  }
+  handleClick(ev) {
+    this.setState((prevState, props) => {
+      return {
+        initialColor: !prevState.initialColor,
+      };
+    });
+  }
   render() {
     const typeList = this.props.type.map((type, index) => {
       return (
@@ -10,7 +24,10 @@ class Pokemon extends React.Component {
       );
     });
     return (
-      <article className="pokemon__list">
+      <article
+        className={`pokemon__list ${this.state.initialColor ? '' : 'active'}`}
+        onClick={this.handleClick}
+      >
         <img
           className="pokemon__photo"
           src={this.props.image}

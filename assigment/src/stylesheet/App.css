@@ -1,6 +1,10 @@
 .app__container {
   padding: 30px;
 }
+
+.title {
+  text-align: center;
+}
 .pokemon__cards {
   display: flex;
   flex-direction: column;
@@ -12,11 +16,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px;
   margin-bottom: 25px;
   border: 1px solid grey;
   border-radius: 20px;
   width: 220px;
+  height: 250px;
 }
 
 .pokemon__type {
@@ -28,9 +34,11 @@
 }
 
 .pokemon__type--item {
-  width: 30px;
-  padding: 5px 0;
-  background-color: ;
+  padding: 5px;
+  margin: 5px 0;
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
 }
 
 @media all and (min-width: 768px) {
