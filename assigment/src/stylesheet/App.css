@@ -1,0 +1,57 @@
+.app__container {
+  padding: 30px;
+}
+.pokemon__cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pokemon__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  width: 220px;
+}
+
+.pokemon__type {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon__type--item {
+  width: 30px;
+  padding: 5px 0;
+  background-color: ;
+}
+
+@media all and (min-width: 768px) {
+  .pokemon__cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .pokemon__list {
+    margin-right: 20px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.active {
+  background-color: #eb4e31;
+}

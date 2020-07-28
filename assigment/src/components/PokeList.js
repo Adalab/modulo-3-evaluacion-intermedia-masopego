@@ -10,7 +10,17 @@ class PokeList extends React.Component {
         </li>
       );
     });
-    return <ul class="pokemon__cards">{pokemonItems}</ul>;
+    return (
+      <>
+        <h1>
+          Mis Pokemon{' '}
+          <span>
+            <i class="fas fa-heart"></i>
+          </span>
+        </h1>
+        <ul class="pokemon__cards">{pokemonItems}</ul>
+      </>
+    );
   }
 }
 
