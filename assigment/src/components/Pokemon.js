@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
   constructor(props) {
@@ -45,6 +46,12 @@ Pokemon.defaultProps = {
     'Imagen no encontrada. Por favor, recarga de nuevo la página para mostrar',
   title: 'Adivina el nombre de este Pokemon',
   type: 'Está lleno de amor',
+};
+
+Pokemon.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.array,
 };
 
 export default Pokemon;
